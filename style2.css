@@ -4,8 +4,8 @@ body {font-size:12px;color:#5e5e5e;font-family:Dotum;margin:0;}
 
 a:link {color:#5e5e5e;text-decoration:none;}
 a:visited {color:#5e5e5e;text-decoration: none}
-a:hover {color:#920000;text-decoration: none;}
-a:active {color:#920000;text-decoration: none;}
+a:hover {color:#5e5e5e;text-decoration: none;}
+a:active {color:#5e5e5e;text-decoration: none;}
 
 #maintop {width:1000px;margin:auto;text-align:center;padding:60 0 60 0;position:center;border-left:0px solid #e7e7e7;border-right:0px solid #e7e7e7;}
 
