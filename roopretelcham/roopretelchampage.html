@@ -1,62 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>루프리텔캄 Roopretelcham</title>
-<link rel="stylesheet" href="https://magiccubegames.github.io/gamedetails/style2.css" type="text/css">
-<style>
-body {
-  background-color: #ffcb29;
-}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roo</title>
+  <link rel="stylesheet" href="https://magiccubegames.github.io/gamedetails/style2.css" type="text/css">
 
-.background-image {
-  background-image: url('background_image.png');
-  background-repeat: repeat-x;
-  background-position: center top;
-  opacity: 0.2; /* Adjust opacity */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Places it behind other content */
-}
-</style>
+  <style>
+    body {
+      background-color: #ffcb29;
+    }
+
+    .background-image {
+      background-image: url('background_image.png');
+      background-repeat: repeat-x;
+      background-position: center top;
+      opacity: 0.2;
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .roopretelcham-page {
+      text-align: center;
+    }
+
+    .roopretelcham-container {
+      width: min(560px, 100%);
+      margin: 0 auto;
+      padding: 32px 16px 40px;
+      text-align: center;
+    }
+
+    .logo-group img,
+    .content-image {
+      display: block;
+      margin: 0 auto 16px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .logo-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .description {
+      color: #000;
+      text-align: center;
+      margin: 24px 0 32px;
+    }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin: 0 auto 32px;
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .footer-area {
+      margin-top: 48px;
+      text-align: center;
+    }
+
+    .footer-area img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (min-width: 700px) {
+      .logo-row {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .logo-row img {
+        margin: 0;
+      }
+    }
+  </style>
 </head>
 
-<body>
-<div class="background-image"></div>
-<center>
-<br><br><br><br><br>
-<img src="logo_6gacha.png">
-<img src="logo_HiJipAk.png">
-<img src="logo_isekai_black_hair.png">
-<img src="logo_YongPaTae.png"><br>
-<img src="BIlogoen.png">
-<br><br>
-<font color=000000>
-'최애캐와 파티가 되어버렸다'는 인기 웹 소설 주인공들이 총출동하는 게임입니다. <br><br>
-소설 속 캐릭터들과 직접 전투에 나서고,<br>
-풀더빙된 유명 성우들의 목소리로 그들의 이야기를 들어주세요.<br>
-<br><br>
-Do you remember 'The Lord of the Roads'?<br>
-After 15 years,<br>'The Lord of the Roads 2' is coming out under the name The 'Lords of Novels'.<br>We've kept the unique systems like party shooting and dash mechanics,<br>while adding numerous heroes, ultimate skills, parrying, roguelike progression, and more—<br>returning as a powerful sequel!It's time to fight again.<br>
-</font>
-<br><br><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/t2HMf2hYsrs?si=uhqF8hE2MploVyXi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br><br><br>
-<img src="magiccube_roopretelcham3.jpg"><br><br>
-<img src="magiccube_roopretelcham1.jpg"><br><br>
-<img src="magiccube_roopretelcham2.jpg"><br><br>
-<img src="magiccube_roopretelcham4.jpg"><br><br>
-<br><br>
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<a href="http://magiccubegames.com/"><u>HOME</u></a><br><br>
-<a href="http://magiccubegames.com/"><img src="http://mgcube.cafe24.com/logo.png" border=0 onfocus="this.blue()" width="110" height="40"></a><br><br>
-Copyright (c) Magic Cube All Right Reserved. <br>
-magiccubegames@gmail.com<br><br><br><br><br>
+<body class="roopretelcham-page">
+  <div class="background-image"></div>
 
-</center>
+  <div class="roopretelcham-container">
+    <div class="logo-group">
+      <div class="logo-row">
+        <img src="logo_6gacha.png" alt="Novel logo 1">
+        <img src="logo_HiJipAk.png" alt="Novel logo 2">
+        <img src="logo_isekai_black_hair.png" alt="Novel logo 3">
+        <img src="logo_YongPaTae.png" alt="Novel logo 4">
+      </div>
+
+      <img src="BIlogoen.png" alt="BI logo">
+    </div>
+
+    <div class="description">
+      <p>
+        '최애캐와 파티가 되어버렸다'는 인기 웹 소설 주인공들이 총출동하는 게임입니다. <br><br>
+        소설 속 캐릭터들과 직접 전투에 나서고,<br>
+        풀더빙된 유명 성우들의 목소리로 그들의 이야기를 들어주세요.<br>
+      </p>
+      <p>
+        Do you remember 'The Lord of the Roads'?<br>
+        After 15 years,<br>'The Lord of the Roads 2' is coming out under the name The 'Lords of Novels'.<br>
+        We've kept the unique systems like party shooting and dash mechanics,<br>
+        while adding numerous heroes, ultimate skills, parrying, roguelike progression, and more—<br>
+        returning as a powerful sequel!It's time to fight again.
+      </p>
+    </div>
+
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/t2HMf2hYsrs?si=uhqF8hE2MploVyXi"
+        title="Game trailer"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <img src="magiccube_roopretelcham3.jpg" alt="Game screenshot 1" class="content-image">
+    <img src="magiccube_roopretelcham1.jpg" alt="Game screenshot 2" class="content-image">
+    <img src="magiccube_roopretelcham2.jpg" alt="Game screenshot 3" class="content-image">
+    <img src="magiccube_roopretelcham4.jpg" alt="Game screenshot 4" class="content-image">
+
+    <div class="footer-area">
+      <a href="http://magiccubegames.com/"><u>HOME</u></a>
+      <br><br>
+
+      <a href="http://magiccubegames.com//">
+        <img src="http://mgcube.cafe24.com/logo.png" alt="Magiccube logo" width="110" height="40">
+      </a>
+
+      <br>
+      Copyright (c) Magic Cube All Right Reserved. <br>
+      magiccubegames@gmail.com
+    </div>
+  </div>
 </body>
 </html>
-
