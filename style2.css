@@ -1,34 +1,215 @@
-img {border: 0;}
+* {
+  box-sizing: border-box;
+}
 
-body {font-size:12px;color:#5e5e5e;font-family:Dotum;margin:0;} 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
-a:link {color:#5e5e5e;text-decoration:none;}
-a:visited {color:#5e5e5e;text-decoration: none}
-a:hover {color:#920000;text-decoration: none;}
-a:active {color:#920000;text-decoration: none;}
+body {
+  font-size: 12px;
+  color: #5e5e5e;
+  font-family: Dotum, sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
 
-#maintop {width:1000px;margin:auto;text-align:center;padding:60 0 60 0;position:center;border-left:0px solid #e7e7e7;border-right:0px solid #e7e7e7;}
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
 
-#maintext {width:1000px;margin:auto;text-align:center;padding:20 0 20 0;position:center;border:0px solid #e7e7e7;}
+a:link {
+  color: #5e5e5e;
+  text-decoration: none;
+}
 
-#mainfoot {width:1000px;margin:auto;text-align:center;padding:20 0 20 0;position:center;border-left:0px solid #e7e7e7;border-right:0px solid #e7e7e7;}
+a:visited {
+  color: #5e5e5e;
+  text-decoration: none;
+}
 
-#top {width:560px;margin:auto;text-align:center;padding:60 0 60 0;position:center;border-left:0px solid #e7e7e7;border-right:0px solid #e7e7e7;}
+a:hover {
+  color: #920000;
+  text-decoration: none;
+}
 
-#vid {width:560px;margin:auto;text-align:center;padding:0 0 0 0;position:center;border:0px solid #e7e7e7;}
+a:active {
+  color: #920000;
+  text-decoration: none;
+}
 
-#game {width:560;margin:auto;text-align:left;padding:10 0 10 10;}
-#icon {width:110px;height:100px;float:left;text-align:left;}
-.title {width:440px;height:100px;float:right;text-align:left;} 
+/* 공통 고정폭 영역 -> 반응형 최대폭 구조 */
+#maintop,
+#maintext,
+#mainfoot,
+#maincategory {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 16px;
+}
 
-#maincategory {width:1000px;margin:auto;background:#fff;text-align:center;padding:3 0 3 0;border:0px solid #e7e7e7;}
+#top,
+#vid,
+#category,
+#contentsfoot,
+#foot {
+  width: min(560px, 100%);
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 16px;
+}
 
-#category {width:560px;margin:auto;background:#fff;text-align:center;padding:3 0 3 0;border:0px solid #e7e7e7;}
+#game {
+  width: min(560px, 100%);
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px 16px;
+}
 
-#text {width:540px;margin:auto;text-align:left;padding:20 0 20 20;position:center;border:0px solid #e7e7e7;}
+#icon {
+  width: 110px;
+  height: auto;
+  float: left;
+  text-align: left;
+}
 
-#contentsfoot {width:560px;margin:auto;text-align:center;padding:20 0 20 0;position:center;border-left:0px solid #e7e7e7;border-right:0px solid #e7e7e7;}
+.title {
+  width: calc(100% - 120px);
+  min-height: 100px;
+  float: right;
+  text-align: left;
+}
 
-#foot {width:560px;margin:auto;text-align:center;padding:20 0 20 0;position:center;border-left:0px solid #e7e7e7;border-right:0px solid #e7e7e7;}
+#text {
+  width: min(540px, 100%);
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 16px;
+}
 
-#whatsnew {width:100%;margin:0;text-align:center;padding:20 0 20 0;position:center;border-left:0px solid #e7e7e7;border-right:0px solid #e7e7e7;}
+#whatsnew {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding: 20px 16px;
+}
+
+/* main.html용 */
+.page-wrap {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.main-logo {
+  margin: 32px 0 48px;
+  text-align: center;
+}
+
+.latest-section {
+  text-align: center;
+}
+
+.latest-section > img {
+  margin-bottom: 24px;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  justify-items: center;
+  align-items: start;
+  margin: 0 auto 48px;
+}
+
+.item-card {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+}
+
+.item-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+#mainfoot p {
+  margin: 16px 0 0;
+}
+
+/* 상세페이지 공통 */
+.detail-page {
+  padding: 24px 16px 40px;
+}
+
+.detail-container {
+  width: min(560px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 32px;
+}
+
+.video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.store-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0 40px;
+}
+
+.store-links a img {
+  display: block;
+}
+
+.detail-text {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 화면이 넓어질 때 main 페이지 아이템 개수 증가 */
+@media (min-width: 600px) {
+  .item-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 960px) {
+  .item-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 960px;
+  }
+}
